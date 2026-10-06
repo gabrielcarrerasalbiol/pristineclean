@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
+"use client";
+
 import { CONTACT_INFO } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get in touch with PristineClean for a free consultation on commercial cleaning services.",
-};
+// Contact page — client component with form interactivity
 
 export default function ContactPage() {
   return (
