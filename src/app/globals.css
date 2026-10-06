@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-navy antialiased;
+    font-size: 16px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-content px-4 sm:px-6 lg:px-8;
+  }
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-emerald px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-emerald-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald min-h-[48px];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-navy/20 bg-transparent px-7 py-3.5 text-sm font-semibold text-navy transition-all hover:border-navy hover:bg-navy hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 min-h-[48px];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 text-sm font-semibold text-emerald transition-all hover:text-emerald-deep min-h-[48px];
+  }
+  .card {
+    @apply rounded-2xl border border-mist bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md;
+  }
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-emerald;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-white-soft {
+    background-color: #F7F9F8;
+  }
+}
